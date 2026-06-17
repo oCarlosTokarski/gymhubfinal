@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gymhub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="multimidia/icon.jpeg" type="image/png" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-card"><a href="#">Inicio</a></div>
+        <div class="header-card"><a href="https://www.gsuplementos.com.br/" target="_blank" rel="noopener noreferrer">Suplementos</a></div>
+        <div class="header-card"><a href="index.html">Log-Out</a></div>
+      </div>
+    </header>
+
+
+    <main>
+      <section class="treinos">
+
+        <div class="treino-card">
+          <a href="peito.html"><img src="multimidia/peitoral.jfif" alt="Treino de peitoral"></a>
+        </div>
+
+        <div class="treino-card">
+          <a href="perna.html"><img src="multimidia/pernas.jpg" alt="Treino de Perna"></a>
+        </div>
+        <div class="treino-card">
+          <a href="costas.html"><img src="multimidia/costas-coleman.jfif" alt="Treino de Costas"></a>
+        </div>
+        <div class="treino-card">
+          <a href="ombro.html"><img src="multimidia/gabriel-ganley.webp" alt="Treino de ombros"></a>
+        </div>
+        <div class="treino-card">
+          <a href="braço.html"><img src="multimidia/antebraço.jpg" alt="Treino de braços"></a>
+        </div>
+        <div class="treino-card">
+          <a href="cardio.html"><img src="multimidia/usain-bolt-12.avif" alt="Aerobico" id="usain"></a>
+        </div>
+      </section>
+
+      <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>GymHub</h3>
+          <p>Seu app de treinos simples e direto.</p>
+        </div>
+
+        <div class="footer-links">
+          <p><a href="#">Fale conosco</a></p>
+        </div>
+
+        <div class="footer-info">
+          <p>Unisenai CIC</p>
+          <p>2026 GymHub - Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+
+    </main>
+<!-- Feito com inteligencia artificial pra esse comando é apenas uma piada de entreterimento -->
+     <script>
+  const usain = document.getElementById('usain');
+  let timer;
+
+  usain.addEventListener('mouseenter', () => {
+    timer = setTimeout(() => {
+        usain.classList.add('fugir');
+    }, 5000); // 5 segundos
+});
+
+usain.addEventListener('mouseleave', () => {
+    clearTimeout(timer);
+});
+  </script>
+  </body>
+</html>

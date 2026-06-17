@@ -1,0 +1,163 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, transparent 60%, #e2e8f0 65%);
+    display: flex;
+}
+
+.bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1.5px);
+}
+
+
+.container{
+    color: rgba(255, 255, 255, 0.90);
+    width: 35%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+.logo-img{
+    width: 60%;
+    max-width: 300px;
+}
+
+.mensagem-login{
+    color: #1e3a8a;
+    text-align: center;
+    font-size: 60px;
+    font-family:"Bebas Neue", sans-serif;
+}
+
+.login-card{
+    background: linear-gradient(145deg,#1e3a8a,#0f172a);
+    border-radius: 12px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 0; 
+}
+
+h2{
+    text-align: center;
+    font-size: clamp(30px, 3vw, 50px);    /* Pesquisei esse comando pq a linha tava bugando ao mexer no tamanho da tela*/
+    margin-top: -10px;
+}
+
+.caixa-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+
+    input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size:16px;
+    outline: none;
+}
+}
+.icon{
+    margin-right: 8px;
+}
+    
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.links:hover{
+    color: #60a5fa;
+}
+
+#registro{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   font-size: 18px;
+}
+
+.botao{
+    width: 100%;
+    height: 46px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.8s ease;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+.botao:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+.botao:active {
+    transform: scale(0.95);
+}
+
+
+/* Pesquisei isso aqui no GPT porque nao foi passado em aula */
+
+@media (max-width: 768px){
+
+    body{
+        flex-direction: column;
+    }
+
+    .bg{
+        position: relative;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .bg-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding: 20px;
+    }
+
+    .logo-img{
+        transform: none;
+        width: 200px;
+    }
+}

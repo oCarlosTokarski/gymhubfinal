@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymhub | Registro</title>
+    <link rel="stylesheet" href="registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link rel="icon" href="multimidia/icon.jpeg" type="image/png">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+  <div class="painel-esquerdo">
+    <h1>Bem-vindo de volta!</h1>
+    <p>Já possui uma conta?</p>
+    <button onclick="window.location.href='index.html'" class="botao-esquerdo">Entrar</button>
+  </div>
+
+  <div class="painel-direito">
+    <h2>Criar conta</h2>
+
+    <form id="formRegistro">
+      <div class="caixa-input">
+        <input type="email" placeholder="Digite seu email" id="email">
+      </div>
+
+      <div class="caixa-input">
+        <input type="password" placeholder="Senha" id="senha">
+      </div>
+
+      <div class="caixa-input">
+        <input type="password" placeholder="Repita a senha" id="confirmarSenha">
+      </div>
+
+      <button class="botao" type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+</div>
+
+<script>
+
+  // feito com auxilio de IA nao é 100% ia mas  tem um tanto e so tem um cadastro ficticio por nao ter banco de dados ainda
+const form = document.getElementById("formRegistro");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const senha = document.getElementById("senha").value;
+    const confirmarSenha = document.getElementById("confirmarSenha").value;
+
+    if (senha !== confirmarSenha) {
+        alert("Senhas não coincidem!");
+        return;
+    }
+
+    window.location.href = "index.html";
+});
+</script>
+
+</body>
+</html>

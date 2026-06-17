@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-gap{
+    padding: 40px;
+}
+
+.header-container{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    display: flex;
+    gap: 40px;
+
+    background: rgba(0,0,0,.3);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.header-container a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.925);
+    transition: transform 0.3s ease;
+}
+
+.header-container a:hover{
+    transform: translateY(-2px);
+}
+
+.treino-card{
+    width: 90%;
+    margin: 15px auto;
+    overflow: hidden;
+    background: #152331;  
+    background: -webkit-linear-gradient(to right, #000000, #152331);  
+    background: linear-gradient(to right, #000000, #152331); 
+
+    color: #f8fafc;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.treino-header{
+    padding: 30px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+
+    h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+}
+
+
+.icon{
+    transition: 0.3s ease;
+}
+
+/* conteúdo escondido */
+.treino-content{
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+
+
+    
+}
+
+.treino-content input{
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
+}
+
+.treino-card.active .treino-content{
+    max-height: 700px;
+    padding: 15px 20px 20px 20px;
+}
+
+/* girar seta */
+.treino-card.active .icon{
+    transform: rotate(180deg);
+}
+
+
+
+/* botão */
+.submit{
+    padding: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgba(37, 99, 235, 0.6);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.submit:hover{
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* barra */
+.progresso{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.barra{
+    flex: 1;
+    height: 8px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.video video{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+footer{
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 30px 20px;
+    margin-top: auto;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.footer-left h3{
+    margin-bottom: 10px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a{
+    color: rgba(255, 255, 255, 0.884);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover{
+    color: dodgerblue;
+}
+
+.footer-info p{
+    margin: 5px 0;
+    font-size: 14px;
+}

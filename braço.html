@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gymhub | Braços</title>
+    <link rel="icon" href="multimidia/icon.jpeg" type="image/png" />
+    <link rel="stylesheet" href="treinos.css" />
+  </head>
+  <body>
+   <header>
+      <div class="header-container">
+        <div class="header-card"><a href="main.html">Inicio</a></div>
+        <div class="header-card"><a href="https://www.gsuplementos.com.br/" target="_blank" rel="noopener noreferrer">Suplementos</a></div>
+        <div class="header-card"><a href="index.html">Log-Out</a></div>
+      </div>
+    </header>
+
+    <!-- gambiarra para ter um gap entre o header e os cards -->
+    <p class="header-gap"></p>
+    <!-- Rosca Direta com Barra Reta -->
+    <section class="treinos">
+      <div class="treino-card">
+        <div class="treino-header" onclick="toggleCard(this)">
+          <h2>Rosca Direta com Barra Reta</h2>
+          <span class="icon">↓</span>
+        </div>
+
+        <div class="treino-content">
+          <div class="video">
+            <video
+              controls
+              src="multimidia/Braço/Exercício Rosca direta com barra reta - Allan Henrique Evaristo (1080p, h264, youtube).mp4"
+            ></video>
+          </div>
+
+          <input type="number" placeholder="Repetições" class="reps" />
+          <input type="number" placeholder="Séries" class="series" />
+          <div class="meta">
+            <h2>Meta 12 repetições em 4 séries.</h2>
+          </div>
+
+          <button class="submit" onclick="calcular(this)">Enviar</button>
+
+          <div class="progresso">
+            <div class="barra"></div>
+            <span>0%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rosca Alternada com rotação de Punho -->
+    <section class="treinos">
+      <div class="treino-card">
+        <div class="treino-header" onclick="toggleCard(this)">
+          <h2>Rosca Alternada com rotação de Punho</h2>
+          <span class="icon">↓</span>
+        </div>
+
+        <div class="treino-content">
+          <div class="video">
+            <video
+              controls
+              src="multimidia/Braço/Exercício Rosca alternada com rotação de punho - Allan Henrique Evaristo (1080p, h264, youtube).mp4"
+            ></video>
+          </div>
+
+          <input type="number" placeholder="Repetições" class="reps" />
+          <input type="number" placeholder="Séries" class="series" />
+          <div class="meta">
+            <h2>Meta 12 repetições em 4 séries.</h2>
+          </div>
+
+          <button class="submit" onclick="calcular(this)">Enviar</button>
+
+          <div class="progresso">
+            <div class="barra"></div>
+            <span>50%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tríceps na Polia com Corda -->
+    <section class="treinos">
+      <div class="treino-card">
+        <div class="treino-header" onclick="toggleCard(this)">
+          <h2>Tríceps na Polia com Corda</h2>
+          <span class="icon">↓</span>
+        </div>
+
+        <div class="treino-content">
+          <div class="video">
+            <video
+              controls
+              src="multimidia/Braço/Exercício Tríceps na polia com corda - Allan Henrique Evaristo (1080p, h264, youtube).mp4"
+            ></video>
+          </div>
+
+          <input type="number" placeholder="Repetições" class="reps" />
+          <input type="number" placeholder="Séries" class="series" />
+          <div class="meta">
+            <h2>Meta 12 repetições em 4 séries.</h2>
+          </div>
+
+          <button class="submit" onclick="calcular(this)">Enviar</button>
+
+          <div class="progresso">
+            <div class="barra"></div>
+            <span>50%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tríceps Testa com Barra Reta -->
+    <section class="treinos">
+      <div class="treino-card">
+        <div class="treino-header" onclick="toggleCard(this)">
+          <h2>Tríceps Testa com Barra Reta</h2>
+          <span class="icon">↓</span>
+        </div>
+
+        <div class="treino-content">
+          <div class="video">
+            <video
+              controls
+              src="multimidia/Braço/Exercício Tríceps testa com barra reta - Allan Henrique Evaristo (1080p, h264, youtube).mp4"
+            ></video>
+          </div>
+
+          <input type="number" placeholder="Repetições" class="reps" />
+          <input type="number" placeholder="Séries" class="series" />
+          <div class="meta">
+            <h2>Meta 12 repetições em 4 séries.</h2>
+          </div>
+
+          <button class="submit" onclick="calcular(this)">Enviar</button>
+
+          <div class="progresso">
+            <div class="barra"></div>
+            <span>50%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>GymHub</h3>
+          <p>Seu app de treinos simples e direto.</p>
+        </div>
+
+        <div class="footer-links">
+          <p><a href="#">Fale conosco</a></p>
+        </div>
+
+        <div class="footer-info">
+          <p>Unisenai CIC</p>
+          <p>2026 GymHub - Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function toggleCard(element) {
+      element.parentElement.classList.toggle("active");
+    }
+
+    function calcular(botao) {
+      const card = botao.closest(".treino-card");
+
+      const reps = Number(card.querySelector(".reps").value);
+      const series = Number(card.querySelector(".series").value);
+
+      const porcentagem = Math.round(((reps * series) / 48) * 100);
+
+      card.querySelector(".progresso span").textContent = porcentagem + "%";
+
+      card
+        .querySelector(".barra")
+        .style.setProperty("--progresso", porcentagem + "%");
+
+      alert("Você completou " + porcentagem + "% da meta!");
+    }
+  </script>
+</html>
