@@ -58,6 +58,10 @@ Site publicado:
 
 https://ocarlostokarski.github.io/gymhubfinal/
 
+## Informação de Login
+* das@gymhub.com
+* Senha: 123456
+
 ## Link do Vídeo
 
 https://youtu.be/grR5jozuv0k
