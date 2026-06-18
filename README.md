@@ -1,4 +1,4 @@
-# GymHub
+# GymHub - Unisenai CIC
 
 ## Objetivo
 
