@@ -58,10 +58,6 @@ Site publicado:
 
 https://ocarlostokarski.github.io/gymhubfinal/
 
-## Repositório GitHub
-
-https://github.com/oCarlosTokarski/gymhubfinal
-
 ## Link do Vídeo
 
 https://youtu.be/grR5jozuv0k
